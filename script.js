@@ -1,8 +1,8 @@
 // Sample Receptionists (With and without checked email) using an array.
 
 const validatedReceptionists =  [
-    {firstName : "Devon", lastName : "Wallerson" , password : "D*wall2005", id:"1231", email:"devonwallerson@gmail.com"},
-    {firstName : "Clifford", lastName : "Prince", password : "cliffyprince", id : "7447" , email : null}
+    {firstName : "Devon", lastName : "Wallerson" , password : "D*dog2234", id:"1231", email:"devonwallerson@gmail.com"},
+    {firstName : "Clifford", lastName : "Prince", password : "C*prince2000", id : "7447" , email : null}
 ];
 
 function validateForm(){
