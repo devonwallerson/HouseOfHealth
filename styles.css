@@ -1,0 +1,63 @@
+* {
+    margin:0;
+    padding:0;
+    font-family:"Calibri";
+    box-sizing:border-box;
+    color:white;
+
+}
+
+
+body { 
+    width : 100vw; /* viewport width + viewport height */
+    min-height : 100vh;
+    background-image: url("background.jpg"); 
+    background-size : cover;
+}
+
+.container{
+    padding:40px;
+    background : linear-gradient(105deg, #5f2c82, #49a09d);
+    max-width : 500px;
+    border-color:white;
+    border-style:solid;
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.header{
+    margin-bottom:30px;
+    font-size:35px;
+    text-align:center;
+    font-family: "Arial Narrow Bold";
+}
+
+.UserInput *{
+    padding:12px;
+    display:inline-flex;
+    margin:auto;
+    font-size:15px;
+    text-align:center;
+    border-color:grey;
+    justify-content:center;
+    left:50%
+}
+
+.dropDown label{
+    color:white;
+    
+}
+
+.dropDown select{
+    color:black;
+}
+.dropDown select option{
+    color:black;
+}
+
+button{
+    color:black;
+    border:solid;
+    border-color:grey;
+}
