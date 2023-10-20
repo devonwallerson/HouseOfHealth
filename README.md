@@ -12,7 +12,8 @@ Note - Part 1 has a side project recreate the drop down with radio buttons and d
 Part 2 - 
 This section of the project focueses on implementing the JavaScript portion of the project. We use JavaScript to validate the receptionist's data and verifies the receptionist's name, password, ID, and email (if conformation is requested). I also ensured that the text inserted to the fields follow protocol (for example, phone numbers being 10 digits long and delimited by ( - ). I was able to implement this through two functions : validateForm and verifyReceptionist. validateForm takes in all of the inputs and establishes the patterns that must be followed in the input fields. Then, it is checked for errors against those patterns. If it passes, it runs the verifyReceptionist function, which returns a boolean that checks the data inputted against an array of saved data. This way, we can see if the data inputted is valid but not found in the registry, and therefore invalid. 
 
-Array to check data values against - const validatedReceptionists =  [
-    {firstName : "Devon", lastName : "Wallerson" , password : "D*dog2234", id:"1231", email:"devonwallerson@gmail.com"},
-    {firstName : "Clifford", lastName : "Prince", password : "C*prince2000", id : "7447" , email : null}
-];
+Check website against these Values
+Devon Wallerson, password D(*)dog2234, id 1231, email devonwallerson@gmail.com
+Clifford Prince, password C(*)prince200, id 7447, email: n/a (leave blank on form) 
+
+Replace parenthesis with asterisk**
