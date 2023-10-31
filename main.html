@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <meta name = "viewport" content = "width = device-width, initial scale = 1">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title>House of Health</title>
         <link rel = "stylesheet" href = "styles.css">
     </head>
@@ -15,7 +15,7 @@
             <div class = "UserInput">
                 <div class = "enter1">
                     <p>Receptionist's First Name:</p>
-                    <input type = "text" id = "firstNameInput" placeholder = "Example 'Jane'" style = color:black; margin:auto;" >
+                    <input type = "text" id = "firstNameInput" placeholder = "Example 'Jane'" style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter2">
@@ -30,7 +30,7 @@
                 </div>
                 <div class = "enter4">
                     <p>Receptionist's ID #:</p>
-                    <input type = "number" id = "IDNumber" placeholder = "Example '324281'" style = "color:black; margin:auto;" >
+                    <input type = "text" id = "IDNumber" placeholder = "Example '324281'" style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter5">
@@ -41,6 +41,7 @@
                 <div class = "enter6">
                     <p>Receptionist's Email</p>
                     <input type = "text" id = "receptionistEmail" placeholder = "Example 'danprime@gmail.com'" style = "color:black;margin:auto">
+                    <label for = "receptionistEmail" class = "hidden" id = "emailReq"><b>REQUIRED</b></label>
                 </div>
                 <div class = "enter7">
                     <input type = "checkbox" id = "emailConformation">
