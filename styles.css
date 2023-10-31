@@ -10,15 +10,17 @@
 
 body { 
     width : 100vw; /* viewport width + viewport height */
-    min-height : 100vh;
+    height : 100vh;
     background-image: url("background.jpg"); 
     background-size : cover;
 }
 
 .container{
-    padding:40px;
+    padding:4%;
+    min-width:500px;
+    max-width:570px;
+    max-height:90%;
     background : linear-gradient(105deg, #5f2c82, #49a09d);
-    max-width : 500px;
     border-color:white;
     border-style:solid;
     position:absolute;
@@ -60,4 +62,28 @@ button{
     color:black;
     border:solid;
     border-color:grey;
+}
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 28px;
+    }
+    .UserInput * {
+        font-size: 14px;
+        padding: 10px;
+    }
+    html{
+        height:100vh;
+    }
+    .container{
+        max-height:100%;
+    }
 }
