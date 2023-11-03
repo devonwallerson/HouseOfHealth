@@ -1,5 +1,6 @@
 # HouseOfHealth
 [Website Link](https://web.njit.edu/~dlw27/it202proj/main.html) 
+[Backend Link](https://web.njit.edu/~dlw27/semesterProject/databasemain.html)
 
 This is a semester-long full stack web application project for my IT202 (Internet Applications) course that will call for the use of HTML, CSS, JavaScript, and later on a backend. Currently, I am on part 2/5 of the project, where we have built the framework of the website using HTML and CSS and implemented some rules using JavaScript. Thank you for viewing!
 
@@ -16,4 +17,7 @@ Check website against these Values
 Devon Wallerson, password D(*)dog2234, id 1231, email devonwallerson@gmail.com
 Clifford Prince, password C(*)prince200, id 7447, email: n/a (leave blank on form) 
 
-Replace parenthesis with asterisk**
+Part 3 -
+This section of the project required us to use our SQL skills to create a database for the doctors office. Then, we had to connect our HTML, CSS, and JavaScript to the database on phpmyadmin using SQL. Once we were able to do so, we had to populate mutliple tables storing the data related to the doctors office. 
+
+
