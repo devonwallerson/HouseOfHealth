@@ -1,0 +1,46 @@
+/* CSS for database.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("background2.jpg");
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+#homeButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
