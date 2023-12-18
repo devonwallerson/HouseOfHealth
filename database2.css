@@ -44,3 +44,45 @@ footer {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+footer .c {
+    width:200%;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Make the navigation bar horizontal */
+nav {
+    display: flex;
+    justify-content: space-between;
+} 
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Add some padding to the body so content is not hidden behind the fixed navbar */
+body {
+    padding-top: 40px; /* Adjust as needed based on your navbar height */
+}

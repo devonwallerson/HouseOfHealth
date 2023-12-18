@@ -3,61 +3,62 @@
     <head>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title>House of Health</title>
-        <link rel = "stylesheet" href = "styles.css">
+        <link rel = "stylesheet" href = "newStyle.css">
     </head>
 
     <body>
+        <form id = "receptionistForm" action = 'authenticate.php' method = "post">
         <div class = "container">
             <div class = "header">
                 <h2>House of Health</h2>
             </div>
-
-            <div class = "UserInput">
                 <div class = "enter1">
                     <p>Receptionist's First Name:</p>
-                    <input type = "text" id = "firstNameInput" placeholder = "Example 'Jane'" style = "color:black; margin:auto;" >
+                    <input type = "text" id = "firstNameInput" name = "receptionistFirstName" placeholder = "Example 'Jane'" style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter2">
                     <p>Receptionist's Last Name:</p>
-                    <input type = "text" id = "lastNameInput" placeholder = "Example 'Doe'" style = "color:black; margin:auto;" >
+                    <input type = "text" id = "lastNameInput" name = "receptionistLastName" placeholder = "Example 'Doe'" style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter3">
                     <p>Receptionist's Password:</p>
-                    <input type = "text" id = "passwordInput" placeholder = "Example 'x291Ah'" style = "color:black; margin:auto;" >
+                    <input type = "password" id = "passwordInput" name = "password" placeholder = "Example 'x291Ah'" style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter4">
                     <p>Receptionist's ID #:</p>
-                    <input type = "text" id = "IDNumber" placeholder = "Example '324281'" style = "color:black; margin:auto;" >
+                    <input type = "text" id = "IDNumber" name = "receptionistID" placeholder = "Example '324281'" style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter5">
                     <p>Receptionist's Phone #:</p>
-                    <input type = "text" id = "phoneNumber" placeholder = "Enter '132-443-2455'." style = "color:black; margin:auto;" >
+                    <input type = "text" id = "phoneNumber" name = "receptionistPhone" placeholder = "Enter '132-443-2455'." style = "color:black; margin:auto;" >
                     <p><strong>REQUIRED</strong></p>
                 </div>
                 <div class = "enter6">
                     <p>Receptionist's Email</p>
-                    <input type = "text" id = "receptionistEmail" placeholder = "Example 'danprime@gmail.com'" style = "color:black;margin:auto">
+                    <input type = "text" id = "receptionistEmail" name = "receptionistEmail" placeholder = "Example 'danprime@gmail.com'" style = "color:black;margin:auto">
                     <label for = "receptionistEmail" class = "hidden" id = "emailReq"><b>REQUIRED</b></label>
                 </div>
                 <div class = "enter7">
-                    <input type = "checkbox" id = "emailConformation">
                     <label for = "emailConformation">Check the box to request an Email Conformation</label>
+
+                    <input type = "checkbox" id = "emailConformation" name="receptionistEmailConformation">
                 </div>
                 <div class = "dropDown">
-                    <label for = "Drop">What type of Transaction would you like to complete?</label>
+                    <label for = "dropDown">What type of Transaction would you like to complete?</label>
                     <select name = "dropDown" id = "dropDown">
                         <option value = "" disabled selected hidden>Choose an Option</option>
                         <option value = "searchreceptionist">Search a Receptionist's Account</option>
-                        <option value = "bookAppointment">Book an Appointment</option>
-                        <option value = "requestProcedures">Request a Procedure</option>
-                        <option value = "cancelProcedures">Cancel a Procedure</option>
                         <option value = "updatePatientInfo">Update Patient Information</option>
+                        <option value = "scheduleAppt">Schedule a Patient Appointment</option>
+                        <option value = "cancelAppt">Cancel a Patient Appointment</option>
+                        <option value = "scheduleProcedure">Schedule a Patient Procedure</option>
+                        <option value = "cancelProcedures">Cancel a Procedure</option>
                         <option value = "createNewPatient">Create a New Patient Account</option>
-
+                        <option value = "accessMainDatabase">Access Database Main</option>
                     </select>
                 </div>
                 <div class = "footer">
@@ -65,10 +66,9 @@
                     <button type = "reset" class = "btn">Reset</button>
                 </div>
             </div>
-
-            </div>
+        </form>
         </div>
 
-        <script src = "script.js"></script>
+        <script src = "script1.js" defer></script>
     </body>
 </html>

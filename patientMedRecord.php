@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <title>House of Health</title>
         <link rel = "stylesheet" href = "database2.css" />
-        <script src = "script.js"></script>
+        <script src = "script2.js"></script>
         <header><h1>Patient Medical Record Database</h1></header><br>
     </head>
 

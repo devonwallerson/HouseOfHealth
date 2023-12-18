@@ -1,0 +1,163 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family:Cambria;
+}
+
+/* Apply a background color and center the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("background2.jpg");
+}
+
+/* Style the container for the form */
+.container{
+    background:#242526;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width:800px;
+    border:solid black 5px;
+}
+
+/* Style the header */
+.header {
+    text-align: center;
+}
+
+.header h2 {
+    margin: 20px 0;
+}
+
+/* Style the form inputs and labels */
+.UserInput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.UserInput .enter7{
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
+}
+
+.UserInput .enter1,
+.UserInput .enter2,
+.UserInput .enter3,
+.UserInput .enter4,
+.UserInput .enter5,
+.UserInput .enter6,
+.UserInput .enter7 {
+    width: 45%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.UserInput p {
+    margin-bottom:10px;
+}
+
+
+.UserInput input,
+.UserInput select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+/* Style the submit and reset buttons */
+.footer {
+    text-align: center;
+}
+.header h2{
+    font-size:200%
+}
+
+.p{
+    font-size:20%;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Style the checkbox and label */
+.UserInput .enter7 input[type="checkbox"] {
+    margin-right: 35px;
+    width:30px;
+    height:30px;
+}
+
+/* Style the dropdown */
+.dropDown label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dropDown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid ;
+    color:black;
+}
+
+.dropDown option{
+    color:black;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Make the navigation bar horizontal */
+nav {
+    display: flex;
+    justify-content: space-between;
+} 
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Add some padding to the body so content is not hidden behind the fixed navbar */
+body {
+    padding-top: 40px; /* Adjust as needed based on your navbar height */
+}

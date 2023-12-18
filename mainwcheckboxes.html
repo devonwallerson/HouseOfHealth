@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial scale = 1">
+        <title>House of Health</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "header">
+                <h2>House of Health</h2>
+            </div>
+
+            <div class = "UserInput">
+                <div class = "enter1">
+                    <p>Receptionist's First Name:</p>
+                    <input type = "text" id = "firstNameInput" placeholder = "Example 'Jane'" style = color:black; margin:auto;" >
+                    <p><strong>REQUIRED</strong></p>
+                </div>
+                <div class = "enter2">
+                    <p>Receptionist's Last Name:</p>
+                    <input type = "text" id = "lastNameInput" placeholder = "Example 'Doe'" style = "color:black; margin:auto;" >
+                    <p><strong>REQUIRED</strong></p>
+                </div>
+                <div class = "enter3">
+                    <p>Receptionist's Password:</p>
+                    <input type = "text" id = "passwordInput" placeholder = "Example 'x291Ah'" style = "color:black; margin:auto;" >
+                    <p><strong>REQUIRED</strong></p>
+                </div>
+                <div class = "enter4">
+                    <p>Receptionist's ID #:</p>
+                    <input type = "number" id = "IDNumber" placeholder = "Example '324281'" style = "color:black; margin:auto;" >
+                    <p><strong>REQUIRED</strong></p>
+                </div>
+                <div class = "enter5">
+                    <p>Receptionist's Phone #:</p>
+                    <input type = "text" id = "phoneNumber" placeholder = "Enter '132-443-2455'." style = "color:black; margin:auto;" >
+                    <p><strong>REQUIRED</strong></p>
+                </div>
+                <div class = "enter6">
+                    <p>Receptionist's Email</p>
+                    <input type = "text" id = "receptionistEmail" placeholder = "Example 'danprime@gmail.com'" style = "color:black;margin:auto">
+                </div>
+                <div class = "enter7">
+                    <input type = "checkbox" id = "emailConformation">
+                    <label for = "emailConformation">Check the box to request an Email Conformation</label>
+                </div>
+                <div class = "checkboxes">
+                        <input type = "checkbox" name = "searchType" id = "option1" value = "acccount" checked>
+                        <label for = "option1">Search a Receptionist's Account</label>
+
+                        <input type = "checkbox" name = "searchType" id = "option2" value = "appointmentBook">
+                        <label for = "option2">Book an Appointment</label>
+
+                        <input type = "checkbox" name = "searchType" id = "option3" value = "appointmentCancel">
+                        <label for = "option3">Cancel An Appointment</label>
+                </div>
+                <div class = "checkboxes2">
+                        <input type = "checkbox" name = "searchType" id = "option4" value = "procedureRequest">
+                        <label for = "option4">Request Procedures</label>
+
+                        <input type = "checkbox" name = "searchType" id = "option5" value = "procedureCancel">
+                        <label for = "option5">Cancel Procedures</label>
+
+                        <input type = "checkbox" name = "searchType" id = "option6" value = "patientUpdate">
+                        <label for = "option6">Update Patient Information</label>
+                        
+                        <input type = "checkbox" name = "searchType" id = "option7" value = "createPatient">
+                        <label for = "option7">Create New Patient</label>
+                </div>
+                <div class = "footer">
+                    <button type = "submit" class = "btn" id = "submitButton">Submit</button>
+                    <button type = "reset" class = "btn">Reset</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <script src = "script.js"></script>
+
+    </body>
+</html>
